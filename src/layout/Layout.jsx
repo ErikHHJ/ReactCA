@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
+import { useStore } from "../store.js";
 
-export function Layout() {
+export function Layout({ children }) {
   const [count, setCount] = useState(0);
-
+  const cart = useStore((state) => state.cart);
   return (
     <>
       <header className="navbar">
@@ -35,10 +36,10 @@ export function Layout() {
         </nav>
         <div className="cartIcon">
           <FaCartArrowDown />
-          <p className="cartquantity">1</p>
+          <p className="cartquantity">{cart.length}</p>
         </div>
       </header>
-      <main></main>
+      <main>{children}</main>
       <footer className="footer">
         <div className="footersection">Browse our collection of products</div>
         <div className="footersection">Location: Bergen, Norway</div>

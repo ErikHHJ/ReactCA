@@ -8,6 +8,7 @@ import { Contact } from "./routes/Contact.jsx";
 import { Products } from "./routes/Products.jsx";
 import { Checkout } from "./routes/Checkout.jsx";
 import { Success } from "./routes/Success.jsx";
+import { SpecificProduct } from "./routes/SpecificProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/products/:itemId",
+        element: <SpecificProduct />,
       },
       {
         path: "/checkout",

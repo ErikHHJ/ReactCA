@@ -572,6 +572,9 @@ label {
   .hamburger {
     display: block;
   }
+  .iASczO {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 385px) {

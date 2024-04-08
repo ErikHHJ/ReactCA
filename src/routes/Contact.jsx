@@ -23,7 +23,7 @@ export function Contact() {
     if (inputValues.fullName.length < 3) {
       errors.fullName = "Full name must be at least 3 characters.";
     }
-    if (inputValues.body.length < 10) {
+    if (inputValues.body.length < 3) {
       errors.body = "Body must be at least 3 characters";
     }
     return errors;

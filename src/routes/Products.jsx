@@ -1,8 +1,4 @@
-import { ProductsFetch } from "../components/Products";
+import { ProductsFetch } from "../components/ProductsFetch";
 export function Products() {
-  return (
-    <div>
-      <ProductsFetch url={"https://v2.api.noroff.dev/online-shop"} />
-    </div>
-  );
+  return <ProductsFetch url={"https://v2.api.noroff.dev/online-shop"} />;
 }

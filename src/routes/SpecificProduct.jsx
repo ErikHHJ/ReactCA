@@ -1,4 +1,4 @@
-import { ProductsFetch } from "../components/Products.jsx";
+import { ProductsFetch } from "../components/ProductsFetch.jsx";
 import { useParams } from "react-router-dom";
 
 export function SpecificProduct() {

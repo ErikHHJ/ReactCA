@@ -1,8 +1,10 @@
+import { useStore } from "../store.js";
+import { RenderCart } from "../components/RenderCart.jsx";
+
 export function Checkout() {
   return (
-    <div>
-      <h1>Checkout</h1>
-      <p>Complete your purchase</p>
-    </div>
+    <>
+      <RenderCart />
+    </>
   );
 }
